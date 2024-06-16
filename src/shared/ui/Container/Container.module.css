@@ -1,0 +1,19 @@
+:root {
+  --padding-size: 40px;
+  --mobile-padding-size: 20px;
+}
+
+.root {
+  max-width: calc(var(--container-width) - var(--padding-size));
+  width: 100%;
+  margin: 0 auto;
+  padding-left: var(--padding-size);
+  padding-right: var(--padding-size);
+}
+
+@media screen and (max-width: 768px) {
+  .root {
+    padding-left: var(--mobile-padding-size);
+    padding-right: var(--mobile-padding-size);
+  }
+}

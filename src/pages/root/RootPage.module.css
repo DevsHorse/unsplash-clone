@@ -1,0 +1,36 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  gap: 15px;
+  max-width: 370px;
+}
+
+.title {
+  font-size: var(--title-font-size);
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+
+.description {
+  text-align: center;
+}
+
+.searchBar {
+  margin-top: 15px;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .searchBar {
+    display: none;
+  }
+}

@@ -1,0 +1,13 @@
+.container {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.emptyTitle div {
+  font-size: var(--title-font-size);
+  color: var(--text-color-gray);
+  font-weight: 500;
+  text-align: center;
+}

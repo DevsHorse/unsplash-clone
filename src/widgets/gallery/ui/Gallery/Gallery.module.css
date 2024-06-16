@@ -1,0 +1,18 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.gridButtons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+  .gridButtons {
+    display: none;
+  }
+}

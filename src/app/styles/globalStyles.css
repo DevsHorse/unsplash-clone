@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, San Francisco, Helvetica Neue,
+    Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Sizes */
+  --container-width: 1440px;
+  --text-font-size: 1.8rem;
+  --title-font-size: 4rem;
+
+  /* Colors */
+  --text-color-black: #272727;
+  --text-color-gray: #767676;
+  --text-color-white: #fff;
+  --color-black: #202020;
+  --color-white: #fff;
+  --background-color: #fff;
+  --secondary-background-color: #eee;
+  --secondary-background-hover-color: #e7e7e7;
+  --border-color: #0000001f;
+
+  /* Animations */
+  --main-transition-time: 0.2s;
+  --main-transition: ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --text-font-size: 1.4rem;
+    --title-font-size: 3.2rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  :root {
+    --text-font-size: 1.2rem;
+    --title-font-size: 2.6rem;
+  }
+}
+
+body {
+  margin: 0;
+  font-size: var(--text-font-size);
+  color: var(--text-color-black);
+  line-height: 1.2;
+  background-color: var(--background-color);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

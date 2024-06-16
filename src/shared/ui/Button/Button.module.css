@@ -1,0 +1,25 @@
+.root {
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  border: 1px solid var(--border-color);
+  user-select: none;
+  white-space: nowrap;
+  font-weight: 600;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: var(--text-color-gray);
+  background: var(--background-color);
+  transition: all var(--main-transition-time) var(--main-transition);
+  box-shadow: 0 1px 1px var(--border-color);
+}
+
+.root:not(:disabled):hover {
+  color: var(--text-color-black);
+  border-color: var(--color-black);
+}
+
+.root:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}

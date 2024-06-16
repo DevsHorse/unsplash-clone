@@ -1,0 +1,8 @@
+.tag {
+  cursor: pointer;
+  transition: all var(--main-transition-time) var(--main-transition);
+}
+
+.tag:hover {
+  background-color: var(--secondary-background-hover-color);
+}

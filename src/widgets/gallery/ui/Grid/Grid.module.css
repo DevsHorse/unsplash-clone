@@ -1,0 +1,31 @@
+:root {
+  --gap-size: 24px;
+}
+
+.grid {
+  column-gap: var(--gap-size);
+  display: grid;
+  grid-template-columns: repeat(var(--cols), minmax(0, 1fr));
+}
+
+.gridColumn {
+  row-gap: var(--gap-size);
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+    --gap-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --gap-size: 30px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  :root {
+    --gap-size: 20px;
+  }
+}

@@ -1,0 +1,18 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  min-height: 100dvh;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.content::-webkit-scrollbar {
+  display: 'none';
+}
+
+.contentContainer {
+  flex-grow: 1;
+}

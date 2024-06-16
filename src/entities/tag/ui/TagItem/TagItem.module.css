@@ -1,0 +1,16 @@
+.root {
+  display: flex;
+  align-items: center;
+  height: 28px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  background-color: var(--secondary-background-color);
+  font-size: calc(var(--text-font-size) - 0.4rem);
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 768px) {
+  .root {
+    font-size: var(--text-font-size);
+  }
+}

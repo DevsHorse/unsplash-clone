@@ -1,0 +1,72 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.root:hover {
+  cursor: pointer;
+}
+
+.root img {
+  width: 100%;
+  display: block;
+  max-width: 100%;
+}
+
+.hoverContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity var(--main-transition-time) var(--main-transition);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.root:hover .hoverContent {
+  opacity: 1;
+}
+
+.hoverContent .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: radial-gradient(circle, transparent, var(--color-black) 90%);
+  opacity: 0.4;
+}
+
+.userTile [data-name='name'] {
+  color: var(--text-color-white);
+}
+
+@media screen and (max-width: 768px) {
+  .root img {
+    order: 2;
+  }
+  .root:hover {
+    cursor: default;
+  }
+  .root img:hover {
+    cursor: pointer;
+  }
+  .hoverContent {
+    padding: 20px 10px;
+    position: relative;
+    order: 1;
+    opacity: 1;
+  }
+  .hoverContent .background {
+    display: none;
+  }
+  .userTile [data-name='name'] {
+    color: inherit;
+    font-weight: 700;
+  }
+}

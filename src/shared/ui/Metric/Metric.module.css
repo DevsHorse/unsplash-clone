@@ -1,0 +1,13 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.root > div:first-child {
+  font-size: calc(var(--text-font-size) - 0.2rem);
+  color: var(--secondary-text-color);
+}
+.root > div:last-child {
+  font-size: var(--text-font-size);
+  font-weight: 700;
+}

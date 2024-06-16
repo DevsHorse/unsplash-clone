@@ -1,0 +1,14 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.title {
+  font-size: var(--title-font-size);
+  text-align: center;
+}

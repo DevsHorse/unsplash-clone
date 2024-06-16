@@ -1,0 +1,31 @@
+.root {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.imageContainer img {
+  width: 100%;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .root {
+    grid-template-columns: 1fr;
+    padding-bottom: 50px;
+  }
+  .imageContainer {
+    display: flex;
+    justify-content: center;
+  }
+  .imageContainer img {
+    max-height: 450px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .imageContainer img {
+    max-height: 300px;
+  }
+}

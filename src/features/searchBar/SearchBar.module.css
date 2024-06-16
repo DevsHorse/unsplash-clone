@@ -1,0 +1,49 @@
+.root {
+  display: flex;
+  border-radius: 24px;
+  height: 40px;
+  background-color: var(--secondary-background-color);
+  transition: all var(--main-transition-time) var(--main-transition);
+  box-shadow: 0 0 0 1px var(--secondary-background-color);
+  flex-grow: 1;
+  padding: 0 15px;
+}
+
+.root:hover {
+  background-color: var(--secondary-background-hover-color);
+  box-shadow: 0 0 0 1px var(--secondary-background-hover-color);
+}
+
+.input {
+  color: var(--text-color-black);
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.root:has(.input:focus) {
+  background-color: var(--background-color);
+}
+
+.button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.searchIcon path {
+  fill: var(--text-color-gray);
+}
+
+.button:hover .searchIcon path {
+  fill: var(--text-color-black);
+}
